@@ -1,0 +1,13 @@
+---
+- studentdetails:
+   - name: saii
+     phono: 898989889
+     address: KPHB
+
+   - name: mali
+     phono: 858585858
+     address: KPHB
+
+   - name: tarun
+     phono: 56465456456
+     address: KPHB
