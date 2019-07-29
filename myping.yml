@@ -1,5 +1,6 @@
 ---
-- hosts: all
+- hosts: all 
+  become: yes
   tasks:
   - name: i am going to ping all nodes(hosts)
     ping:
