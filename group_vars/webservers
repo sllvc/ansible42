@@ -1,3 +1,3 @@
 
-javaonubuntu: openjdk-6-jre
-javaonredhat: java-1.6.0-openjdk
+javaonubuntu: openjdk-7-jre
+javaonredhat: java-1.7.0-openjdk
