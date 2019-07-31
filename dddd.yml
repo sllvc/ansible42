@@ -2,12 +2,24 @@
 - hosts: webservers
   become: yes
   tasks: 
+  - name: add package
+    apt_repository:
+      repo: ppa:openjdk-r/ppa
+      state: present
+    when: ansible_os_family =="Debian"
+    
+  - name: update package
+    apt:
+      update_cache: yes
+    when: ansible_os_family =="Debian"
+    
+
   - name: install java  on ubuntu
     apt: 
       name: "{{ javaonubuntu }}"
       state: present
     when: ansible_os_family =="Debian"
-    
+
   - name: install java on amazon
     yum:
       name: "{{ javaonredhat }}"
