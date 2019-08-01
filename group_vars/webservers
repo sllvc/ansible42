@@ -1,0 +1,4 @@
+key: vaule
+
+webserveronubuntu: apache2
+webserveeronamazon: httpd
