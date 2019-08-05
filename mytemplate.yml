@@ -9,7 +9,7 @@
 
   - name: copy index.je file into all nodes
     template:
-      src:
+      src: index.j2
       dest: /var/www/html/index.html
 
 
